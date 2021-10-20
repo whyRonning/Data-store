@@ -3,10 +3,6 @@ const { Router } = require("express");
 const router = Router();
 const imgIds=require("../models/imgIds");
 const fs = require('fs');
-const readline = require('readline');
-const {google} = require('googleapis');
-const SCOPES = ['https://www.googleapis.com/auth/drive'];
-const TOKEN_PATH = 'token.json';
 router.post("/upload", async (req, res) => {
     try {
 		
